@@ -1,4 +1,4 @@
-export default function (success) {
+export default function (success, errorCallback) {
   fetch('api/todos')
     .then((response) => {
       if (response.status === 200) {
@@ -9,5 +9,8 @@ export default function (success) {
     })
     .then((responseData) => {
       success(responseData);
+    })
+    .catch(error => {
+      errorCallback();
     });
 }

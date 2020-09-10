@@ -10,21 +10,26 @@ import Navbar from '../Common/Navbar';
 export default class Todos extends Component {
   constructor() {
     super();
-    this.state = { todos: [] };
+    this.state = { todos: [], showError: false };
 
     this.addCreatedTodo = this.addCreatedTodo.bind(this);
     this.addCreatedTodoItem = this.addCreatedTodoItem.bind(this);
     this.toggleTodoItem = this.toggleTodoItem.bind(this);
     this.showNewTodo = this.showNewTodo.bind(this);
     this.showTodos = this.showTodos.bind(this);
+    this.showError = this.showError.bind(this);
   }
 
   componentDidMount() {
-    GetTodos(this.showTodos);
+    GetTodos(this.showTodos, this.showError);
   }
 
   showTodos(todos) {
     this.setState({ todos });
+  }
+
+  showError() {
+    this.setState({ showError: true });
   }
 
   addCreatedTodo(todo) {
@@ -50,7 +55,7 @@ export default class Todos extends Component {
   }
 
   render() {
-    const { todos, showNew } = this.state;
+    const { todos, showNew, showError } = this.state;
     return (
       <>
         <Navbar showNewTodo={this.showNewTodo} />
@@ -58,14 +63,18 @@ export default class Todos extends Component {
           <div className="container-fluid">
             <div className="row mt-4">
               {
-                todos.map(todo => (
-                  <Todo
-                    key={todo.identifier}
-                    addCreatedTodoItem={this.addCreatedTodoItem}
-                    toggleTodoItem={this.toggleTodoItem}
-                    {...todo}
-                  />
-                ))
+                showError ?
+                  (<div>
+                    error
+                  </div>)
+                  : todos.map(todo => (
+                    <Todo
+                      key={todo.identifier}
+                      addCreatedTodoItem={this.addCreatedTodoItem}
+                      toggleTodoItem={this.toggleTodoItem}
+                      {...todo}
+                    />
+                  ))
               }
               {
                 showNew
