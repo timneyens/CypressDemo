@@ -1,0 +1,37 @@
+[
+	{
+		"identifier": "20c04b69-716c-46df-86ec-a40fba8ebb3c",
+		"title": "Monday",
+		"createdDate": "2020-09-03T11:21:58.207Z",
+		"todoItems": [
+			{
+				"identifier": "9112ddf1-c06d-4301-be13-bb7f419bea9f",
+				"text": "Shopping",
+				"checked": true
+			},
+			{
+				"identifier": "0883c3dc-f663-4bd1-9c4b-00ae491ba514",
+				"text": "Cleaning",
+				"checked": false
+			}
+		]
+	},
+	{
+		"identifier": "0c7397fb-ca1b-467b-8198-c988fad66d9b",
+		"title": "Tuesday",
+		"createdDate": "2020-09-10T08:30:57.16Z",
+		"todoItems": [
+			{
+				"identifier": "9d450639-c276-4bfc-968f-e3fbad884bbf",
+				"text": "Cook",
+				"checked": false
+			}
+		]
+	},
+	{
+		"identifier": "f2027b61-498d-4ab7-892d-9b43ffddc6f1",
+		"title": "Wednesday",
+		"createdDate": "2020-09-10T09:08:32.195Z",
+		"todoItems": []
+	}
+]
