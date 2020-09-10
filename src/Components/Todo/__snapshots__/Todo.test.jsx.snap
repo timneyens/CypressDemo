@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo gets loaded correctly 1`] = `
+<div
+  className="col-md-3"
+>
+  <div
+    className="card shadow mb-4"
+  >
+    <div
+      className="card-header"
+    >
+      <span>
+        title
+      </span>
+    </div>
+    <div
+      className="card-body"
+    >
+      <li
+        className="list-group-item"
+      >
+        <div
+          className="form-check"
+        >
+          <input
+            checked={false}
+            className="form-check-input"
+            id="identifier1"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="identifier1"
+          >
+            text1
+          </label>
+        </div>
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <div
+          className="form-check"
+        >
+          <input
+            checked={false}
+            className="form-check-input"
+            id="identifier2"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="identifier2"
+          >
+            text2
+          </label>
+        </div>
+      </li>
+      <div
+        className="row mt-4"
+      >
+        <div
+          className="col-10"
+        >
+          <input
+            className="form-control"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="col-2"
+        >
+          <button
+            className="btn btn-success float-right"
+            onClick={[Function]}
+            type="button"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

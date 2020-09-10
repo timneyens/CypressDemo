@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTodo gets loaded correctly 1`] = `
+<div
+  className="col-md-3"
+>
+  <div
+    className="card shadow mb-4"
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-9"
+        >
+          <input
+            className="form-control"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="offset-1 col-2"
+        >
+          <button
+            className="btn btn-success float-right"
+            onClick={[Function]}
+            type="button"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-body"
+    />
+  </div>
+</div>
+`;

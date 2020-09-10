@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar gets loaded correctly 1`] = `
+<nav
+  className="navbar navbar-dark bg-dark"
+>
+  <span
+    className="navbar-brand mb-0 h1"
+  >
+    React Todo app
+  </span>
+  <button
+    className="btn btn-success"
+    onClick={[Function]}
+    type="button"
+  >
+    Add todo list
+  </button>
+</nav>
+`;

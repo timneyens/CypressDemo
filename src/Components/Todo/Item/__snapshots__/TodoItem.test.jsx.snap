@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem gets loaded correctly 1`] = `
+<li
+  className="list-group-item"
+>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="identifier"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="identifier"
+    >
+      text
+    </label>
+  </div>
+</li>
+`;

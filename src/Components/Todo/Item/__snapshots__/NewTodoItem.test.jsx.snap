@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTodoItem gets loaded correctly 1`] = `
+<div
+  className="row mt-4"
+>
+  <div
+    className="col-10"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="col-2"
+  >
+    <button
+      className="btn btn-success float-right"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+  </div>
+</div>
+`;
