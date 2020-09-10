@@ -1,7 +1,5 @@
-import settings from '../../Settings/Settings';
-
 export default function (data, success) {
-  fetch(`${settings.apiRoot}/todos`, {
+  fetch('api/todos', {
     body: JSON.stringify(data),
     headers: {
       'content-type': 'application/json',

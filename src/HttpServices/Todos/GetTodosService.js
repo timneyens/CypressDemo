@@ -1,7 +1,5 @@
-import settings from '../../Settings/Settings';
-
 export default function (success) {
-  fetch(`${settings.apiRoot}/todos`)
+  fetch('api/todos')
     .then((response) => {
       if (response.status === 200) {
         return response.json();

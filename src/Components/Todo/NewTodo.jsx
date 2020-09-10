@@ -30,7 +30,16 @@ class NewTodo extends PureComponent {
           <div className="card-header">
             <div className="row">
               <div className="col-9">
-                <input type="text" className="form-control" value={title} onChange={this.handleChange} />
+                <input
+                  id="todo-name"
+                  aria-label="Todo name"
+                  placeholder="Todo name"
+                  data-testid="test-todo-name"
+                  type="text"
+                  className="form-control"
+                  value={title}
+                  onChange={this.handleChange}
+                />
               </div>
               <div className="offset-1 col-2">
                 <button type="button" className="btn btn-success float-right" onClick={this.addTodo}>Save</button>

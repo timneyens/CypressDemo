@@ -1,7 +1,5 @@
-import settings from '../../Settings/Settings';
-
 export default function (todoId, todoItemId, success) {
-  fetch(`${settings.apiRoot}/todos/${todoId}/items/${todoItemId}/toggle`, {
+  fetch(`api/todos/${todoId}/items/${todoItemId}/toggle`, {
     headers: {
       'content-type': 'application/json',
     },
