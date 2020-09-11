@@ -45,5 +45,12 @@ describe('Todos component', () => {
     }).as('todos');
     cy.visit('/');
     cy.wait('@todos');
-  });
+
+    // cy.matchImageSnapshot(`Error`);
+
+    const sizes = [[1600, 900], [400, 600]];
+    sizes.forEach(([width, height]) => {
+      cy.viewport(width, height);
+      cy.matchImageSnapshot(`${width}-${height}-error`);
+    });
 });
