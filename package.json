@@ -4,6 +4,8 @@
   "private": true,
   "proxy": "http://localhost:5001/",
   "dependencies": {
+    "@percy/agent": "^0.28.2",
+    "@percy/cypress": "^2.3.1",
     "@testing-library/cypress": "^7.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^10.4.9",

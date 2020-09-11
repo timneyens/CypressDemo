@@ -51,4 +51,8 @@ describe('Todos component', () => {
       cy.viewport(width, height);
       cy.matchImageSnapshot(`${width}-${height}-error`);
     });
+
+    const widths = [1600, 900, 400];
+    cy.percySnapshot('error', { widths });
+  });
 });
