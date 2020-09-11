@@ -64,7 +64,7 @@ export default class Todos extends Component {
             <div className="row mt-4">
               {
                 showError ?
-                  (<div>
+                  (<div class="">
                     error
                   </div>)
                   : todos.map(todo => (
