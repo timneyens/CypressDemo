@@ -1,7 +1,6 @@
 describe('Todos component', () => {
   beforeEach(() => {
     cy.viewport(1400, 600);
-
   });
 
   it('View todo list', () => {
@@ -34,7 +33,6 @@ describe('Todos component', () => {
     cy.wait('@add-todos');
     cy.findByText('Thursday').should('exist');
   });
-
 
   it('View error', () => {
     cy.route2({
