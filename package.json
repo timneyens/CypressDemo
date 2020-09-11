@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.2",
     "cypress": "^5.1.0",
     "cypress-image-snapshot": "^3.1.1",
+    "cypress-cucumber-preprocessor": "^2.5.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -44,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
