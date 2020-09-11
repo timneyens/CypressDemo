@@ -1,9 +1,9 @@
-describe('Todos component', () => {
+describe('Todos component test', () => {
   beforeEach(() => {
     cy.viewport(1400, 600);
   });
 
-  it('View todo list', () => {
+  it('Add todo list', () => {
     cy.route2({
       path: '/api/todos',
       method: 'GET'
@@ -34,7 +34,7 @@ describe('Todos component', () => {
     cy.findByText('Thursday').should('exist');
   });
 
-  it('View error', () => {
+  it('Shows an error when todo api returns error', () => {
     cy.route2({
       path: '/api/todos',
       method: 'GET'
