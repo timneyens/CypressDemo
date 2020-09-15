@@ -44,6 +44,8 @@ describe('Todos component test', () => {
     cy.visit('/');
     cy.wait('@todos');
 
+    cy.findByText('error').should('exist');
+
     // cy.matchImageSnapshot(`Error`);
 
     const sizes = [[1600, 900], [400, 600]];
